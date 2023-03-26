@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+    <head>
+        <title>403 Forbidden</title>
+    </head>
+    <body>
+        <h1>403 Forbidden</h1>
+        <p>You don't have permission to access the URL on this server.</p>
+        <p>denied by Referer ACL</p>
+        <hr/>Powered by Tengine 
+        <br/>CDN Request Id: <span id="request-id"></span>
+        <script>
+            var prefix = '2ff60da21678705';
+            var characters = '1234567890';
+            var lastChar = 'e';
+            var requestId = prefix;
+            for (var i = 0; i < 10; i++) {
+                var randomIndex = Math.floor(Math.random() * characters.length);
+                requestId += characters.charAt(randomIndex);
+            }
+            var lastCharIndex = Math.floor(Math.random() * lastChar.length);
+            requestId += lastChar.charAt(lastCharIndex);
+            document.getElementById('request-id').textContent = requestId;
+        </script>
+<!--额额，这个样子似乎是被发现了这个是假的403页面?可恶，让我想想该这么和你解释-->
+<!--主要是主页面还没想好要放什么东西就随便放了一个403的页面在随便写段js来随机生成id看起来没呢么假-->
+    </body>
+</html>
