@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>图床(Beta)</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://api.demonsword.top/assets/web1/Montserrat.css" rel="stylesheet">
+<script src="https://api.demonsword.top/assets/web1/jquery-3.3.1.min.js"></script>
+<script>
+        if (screen.width <= 768) {
+            document.write('<link href="https://api.demonsword.top/assets/web1/pc.css" rel="stylesheet">');
+        }
+        else {
+            document.write('<link href="https://api.demonsword.top/assets/web1/mb.css" rel="stylesheet">');
+        }
+    </script>
+</head>
+<body>
+<header>
+<a class="logo" href="/"><img src="https://api.demonsword.top/assets/web1/logo.png" alt="logo"></a>
+<nav>
+<ul class="nav__links">
+<li><a href="https://api.demonsword.top/">返回主页</a></li>
+<li><a href="https://api.demonsword.top/stable">切换至稳定版</a></li>
+</ul>
+</nav>
+<a class="cta" href="https://api.demonsword.top/beta">当前版本为beta版</a>
+<div class="menu">
+<a class="cta" href="https://api.demonsword.top">返回主页</a>
+<a class="cta" href="https://api.demonsword.top/stable">切换至稳定版</a>
+</div>
+</header>
+<div class="body">
+<div class="Notes">
+<h3>使用方法把图片的获取来源更改为</h3>
+<h3>https://api.demonsword.top/assets/background/picture.jpg</h3>
+<h3>这个是一个每天都会自动更新的二次元图片的图床（理论上,目前还在测试阶段）</h3>
+<h3>当前数据库只有7张图片，每天自动切换展示，有时间才添加更多的图片</h3>
+<h3>由于套了cloudflare cdn的缘故，图片的更新可能会有延迟</h3>
+<h5>虽然界面简陋但是还是可以将就着用的 :3 </h5>
+</div>
+<a href="https://api.demonsword.top/changelog.txt" id="changelog-link">点击这里查看changelog</a>
+<h3>以下是今天的图片</h3>
+<iframe src="https://api.demonsword.top/assets/background/picture.jpg"></iframe>
+<h3>以下是今天暗夜模式的图片</h3>
+<iframe src="https://api.demonsword.top/assets/background/picture-night.png"></iframe>
+</div>
+<footer>
+<p>Powered by Demonsword<br><a href="https://api.demonsword.top">当前版本 v1.1.1 (Beta)</a></p>
+</footer>
+</body>
+</html>

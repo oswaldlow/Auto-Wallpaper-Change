@@ -1,10 +1,9 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <title>每天更新图片的图床</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://api.demonsword.top/assets/web1/jquery-3.3.1.min.js"></script>
-  <script>
+<title>DemonSword Menu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://api.demonsword.top/assets/web1/jquery-3.3.1.min.js"></script>
+<script>
     $(document).ready(function() {
       var width = $(window).width();
       var css_link = $("<link>", {
@@ -13,30 +12,29 @@
         href: ""
       });
       if (width >= 768) {
-        css_link.attr("href", "./assets/web1/style.css");
+        css_link.attr("href", "https://api.demonsword.top/assets/web1/pc-mm.css");
       } else {
-        css_link.attr("href", "./assets/web1/mobile.css");
+        css_link.attr("href", "https://api.demonsword.top/assets/web1/mobile-mm.css");
       }
       $("head").append(css_link);
     });
   </script>
 </head>
 <body>
-  <!--粪山代码，别崩-->
-  <div class="Notes">
-    <h3>使用方法把图片的获取来源更改为</h3>
-    <h3>https://api.demonsword.top/assets/background/picture.jpg</h3>
-    <h3>这个是一个每天都会自动更新的二次元图片的图床（理论上,目前还在测试阶段）</h3>
-    <h3>当前数据库只有7张图片，每天自动切换展示，有时间才添加更多的图片</h3>
-    <h3>由于套了cloudflare cdn的缘故，图片的更新可能会有延迟</h3>
-    <h5>虽然界面简陋但是还是可以将就着用的 :3 </h5>
+<div class="banner">
+<div class="navbar">
+<img src="https://api.demonsword.top/assets/web1/logo.png" class="logo">
+<ul>
+<li><a href="https://t.me/HangHang2017">Contact Me on Telegram</a></li>
+</ul>
 </div>
-  <a href="https://api.demonsword.top/changelog.txt" id="changelog-link">点击这里查看changelog</a>
-	<h3>以下是今天的图片</h3>
-	<iframe src="./assets/background/picture.jpg"></iframe>
-	<h6>以后或许可能应该会整个暗夜模式的壁纸，一定会的！（咕咕咕）</h6>
+<div class="content">
+<h1>欢迎来到我的图床</h1>
+<h1>请选择你想要前往的通道</h1>
+<p> </p>
+<button onclick="location.href='https://api.demonsword.top/stable'" type="button"><span></span>稳定版</button>
+<button onclick="location.href='https://api.demonsword.top/beta'" type="button"><span></span>测试版</button>
+</div>
+</div>
 </body>
-<footer>
-  <p>Powered by Demonsword<br><a href="https://api.demonsword.top">当前版本 v1.0 (Stable)</a></p>
-</footer>
 </html>
