@@ -1,3 +1,46 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+  <title>每天更新图片的图床</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://api.demonsword.top/assets/web1/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var width = $(window).width();
+      var css_link = $("<link>", {
+        rel: "stylesheet",
+        type: "text/css",
+        href: ""
+      });
+      if (width >= 768) {
+        css_link.attr("href", "./assets/web1/style.css");
+      } else {
+        css_link.attr("href", "./assets/web1/mobile.css");
+      }
+      $("head").append(css_link);
+    });
+  </script>
+</head>
+<body>
+  <!--粪山代码，别崩-->
+  <div class="Notes">
+    <h3>使用方法把图片的获取来源更改为</h3>
+    <h3>https://api.demonsword.top/assets/background/picture.jpg</h3>
+    <h3>这个是一个每天都会自动更新的二次元图片的图床</h3>
+    <h3>当前数据库只有7张图片，每天自动切换展示</h3>
+    <h3>由于套了cloudflare cdn的缘故，图片的更新可能会有延迟</h3>
+    <h5>虽然界面简陋但是还是可以将就着用的 :3 </h5>
+</div>
+  <a href="https://api.demonsword.top/changelog.txt" id="changelog-link">点击这里查看changelog</a>
+	<h3>以下是今天的图片</h3>
+	<iframe src="./assets/background/picture.jpg"></iframe>
+</body>
+<footer>
+  <p>Powered by Demonsword<br><a href="https://api.demonsword.top">当前版本 v1.1 (Stable Release)</a></p>
+</footer>
+</html>
+=======
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,3 +83,4 @@
   <p>Powered by Demonsword<br><a href="https://api.demonsword.top">当前版本 v1.0 (Stable Release)</a></p>
 </footer>
 </html>
+>>>>>>> aa787f103d8e448969abd4e07d2c3c48feec0c7a

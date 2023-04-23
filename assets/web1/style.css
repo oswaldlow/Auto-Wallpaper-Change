@@ -1,108 +1,174 @@
-/* 大屏幕样式 */
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  font-family: Arial, sans-serif;
-}
-
-.Notes {
-  margin-top: 50px;
-  padding: 20px;
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  max-width: 800px;
-  text-align: center;
-}
-
-.Notes h3 {
-  margin-top: 0;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 1.5;
-  color: #333;
-}
-
-.Notes h5 {
-  margin-top: 20px;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 1.5;
-  color: #333;
-}
-
-iframe {
-  max-width: 1000px;
-  width: 100%;
-  height: 600px;
-  margin-top: 50px;
-}
-
-h3 {
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: 50px;
-}
-
-h6 {
-  margin-top: 30px;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 1.5;
-  color: #333;
-}
-
-a#changelog-link {
-  display: block;
-  margin-top: 50px;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-
-a#changelog-link:hover {
-  color: #000;
-}
+/* 以下是 CSS 样式 */
+.logo {
+    display: none;
+  }
+  
+/* Normalize styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set font family */
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Header styles */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .cta {
+    margin-right: 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .cta:hover {
+    background-color: #555;
+    cursor: pointer;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 20px;
+    }
+  
+    .nav__links {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .nav__links li {
+      padding: 10px 0;
+    }
+  
+    .cta {
+      margin: 10px 0;
+    }
+  
+    .menu {
+      display: block;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  
+    .logo {
+        display: none;
+      }
+      
     
-footer {
-  background-color: #f2f2f2;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  font-size: 14px;
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-footer p {
-  margin: 0;
-}
-
-footer a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer a:hover {
-  color: #000;
-}
-
-
-body {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer and Edge */
-}
-
-/* Chrome, Safari, and Opera */
-body::-webkit-scrollbar {
-  display: none;
-}
+  }
+  
+  /* Styles for body and footer */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* 添加了背景颜色 */
+  }
+  
+  iframe {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .Notes {
+    word-break: break-all; /* 或者使用 overflow-wrap: break-word; */
+    border: 1px solid #ccc; /* 添加了边框 */
+    border-radius: 5px; /* 添加了圆角 */
+    padding: 10px; /* 添加了内边距 */
+    margin-bottom: 20px; /* 添加了外边距 */
+    background-color: #fff; /* 添加了背景颜色 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 添加了阴影 */
+  }
+  
+  .Notes h3 {
+    color: #333; /* 修改了标题颜色 */
+    font-size: 1.2rem; /* 修改了标题字体大小 */
+    margin-bottom: 10px; /* 添加了标题下方的外边距 */
+  }
+  
+  .Notes h5 {
+    color: red; /* 修改了副标题颜色 */
+    font-size: 1rem; /* 修改了副标题字体大小 */
+  }
+  
+  footer {
+    background-color: #333; /* 添加了背景颜色 */
+    color: #fff; /* 修改了文字颜色 */
+    padding: 20px; /* 添加了内边距 */
+    text-align: center; /* 修改了文本对齐方式 */
+  }
+  
+  footer p {
+    margin: 0; /* 清除段落的默认外边距 */
+  }
+  
+  a {
+    color: grey; /* 修改链接颜色 */
+    text-decoration: none; /* 清除链接下划线 */
+    padding: 5px; /* 添加内边距 */
+    border-radius: 5px; /* 添加圆角 */
+    transition: background-color 0.2s ease; /* 添加过渡效果 */
+  }
+  
+  a:hover {
+    background-color: #f2f2f2; /* 鼠标悬停时修改背景颜色 */
+  }
+  
+  a {
+    color: grey; /* 修改链接颜色 */
+    text-decoration: none; /* 清除链接下划线 */
+    padding: 5px; /* 添加内边距 */
+    border-radius: 5px; /* 添加圆角 */
+    transition: background-color 0.2s ease; /* 添加过渡效果 */
+    font-size: 18px; /* 添加字体大小 */
+  }
+  
+  
+  @media screen and (max-width: 767px) {
+    iframe {
+      height: 400px;
+    }
+  }
+  
